@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "a7db23_taller",
+    "password": "tecsup2021",
+    "database": "db_a7db23_taller",
+    "host": "mysql5045.site4now.net",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
