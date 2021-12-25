@@ -10,9 +10,9 @@ class AuthController {
             let user = users[0]
             bcrypt.compare(password, user.password,(err, result) => {
                 if (result == true) {
-                    res.send("Logged in...")
+                    res.send("Authorized")
                 } else {
-                    let err = new Error("Wrong password!")
+                    let err = new Error("Unauthorized")
                     err.status = 401
                     res.send(err.message)
                 }
