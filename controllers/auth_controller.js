@@ -15,9 +15,8 @@ class AuthController {
                 } else {
                     let err = new Error("Unauthorized")
                     err.status = 401
-                    res.status(401).send({
-                        message: err.message
-                    })
+                    res.status = 401
+                    res.send(err.message)
                 }
             })
         })
